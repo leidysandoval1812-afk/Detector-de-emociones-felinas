@@ -51,7 +51,7 @@ if imagen_input is not None:
                 {"emocion": "Enojado / Molesto 😾", "consejo": "Evita tocarlo en este momento para prevenir un rasguño."}
             ]
             
-            # Selección de resultado (Aquí se conectará el modelo de IA real)
+            # Selección de resultado
             resultado = random.choice(emociones)
             
             # Celebración visual para el niño
@@ -63,8 +63,3 @@ if imagen_input is not None:
 # Pie de página
 st.markdown("---")
 st.markdown("<p style='text-align: center; color: gray;'>Proyecto de Ciencia y Tecnología | Creado por Liam Velez - Curso 201</p>", unsafe_allow_html=True)
-            resultado = random.choice(emociones)
-            
-            st.success(f"**Resultado:** {resultado['emocion']}")
-            st.info(f"💡 **Recomendación:** {resultado['consejo']}")
-            
