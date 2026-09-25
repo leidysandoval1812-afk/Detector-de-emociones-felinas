@@ -11,16 +11,18 @@ with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/616/616430.png", width=100)
     st.title("Proyecto de Ciencias 🔬")
     st.markdown("---")
+    st.subheader("🏫 Colegio:")
+    st.write("**Rafael Uribe Uribe**")
     st.subheader("👨‍🔬 Creador:")
     st.write("**Liam Velez**")
-    st.subheader("🏫 Curso:")
+    st.subheader("🎒 Curso:")
     st.write("**201**")
     st.markdown("---")
     st.info("💡 **Objetivo:** Ayudar a los dueños a entender mejor el lenguaje corporal y emociones de sus gatos usando Inteligencia Artificial.")
 
 # --- CUERPO PRINCIPAL ---
 st.title("🐱 Detector de Emociones Felinas")
-st.caption("Proyecto presentado por **Liam Velez** (Curso 201)")
+st.caption("Colegio Rafael Uribe Uribe | Proyecto presentado por **Liam Velez** (Curso 201)")
 
 st.write("Toma una foto a tu gato o sube una imagen para analizar su estado de ánimo.")
 
@@ -62,4 +64,4 @@ if imagen_input is not None:
 
 # Pie de página
 st.markdown("---")
-st.markdown("<p style='text-align: center; color: gray;'>Proyecto de Ciencia y Tecnología | Creado por Liam Velez - Curso 201</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: gray;'>Proyecto de Ciencia y Tecnología | Colegio Rafael Uribe Uribe | Creado por Liam Velez - Curso 201</p>", unsafe_allow_html=True)
