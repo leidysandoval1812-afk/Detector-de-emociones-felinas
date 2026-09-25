@@ -6,23 +6,34 @@ import time
 # Configuración de la ventana
 st.set_page_config(page_title="Detector de Emociones Felinas - Liam Velez", page_icon="🐱")
 
-# --- BARRA LATERAL (Información del Proyecto) ---
+# --- BARRA LATERAL (Información del Proyecto con Colores) ---
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/616/616430.png", width=100)
-    st.title("Proyecto de Ciencias 🔬")
+    st.markdown("<h2 style='color: #FF5722;'>Proyecto de Ciencias 🔬</h2>", unsafe_allow_html=True)
     st.markdown("---")
-    st.subheader("🏫 Colegio:")
-    st.write("**Rafael Uribe Uribe**")
-    st.subheader("👨‍🔬 Creador:")
-    st.write("**Liam Velez**")
-    st.subheader("🎒 Curso:")
-    st.write("**201**")
+    
+    st.markdown("<h3 style='color: #0288D1; margin-bottom: 0px;'>🏫 Colegio:</h3>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #0288D1; font-size: 20px; font-weight: bold;'>Rafael Uribe Uribe</p>", unsafe_allow_html=True)
+    
+    st.markdown("<h3 style='color: #4CAF50; margin-bottom: 0px;'>👨‍🔬 Creador:</h3>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #388E3C; font-size: 22px; font-weight: bold;'>Liam Velez</p>", unsafe_allow_html=True)
+    
+    st.markdown("<h3 style='color: #FF9800; margin-bottom: 0px;'>🎒 Curso:</h3>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #F57C00; font-size: 24px; font-weight: bold;'>201</p>", unsafe_allow_html=True)
+    
     st.markdown("---")
     st.info("💡 **Objetivo:** Ayudar a los dueños a entender mejor el lenguaje corporal y emociones de sus gatos usando Inteligencia Artificial.")
 
 # --- CUERPO PRINCIPAL ---
 st.title("🐱 Detector de Emociones Felinas")
-st.caption("Colegio Rafael Uribe Uribe | Proyecto presentado por **Liam Velez** (Curso 201)")
+
+# Encabezado colorido
+st.markdown("""
+<div style='background-color: #E3F2FD; padding: 10px; border-radius: 10px; margin-bottom: 20px;'>
+    <h4 style='color: #0288D1; margin: 0;'>🏫 <b>Colegio Rafael Uribe Uribe</b></h4>
+    <p style='margin: 0; font-size: 16px;'>Proyecto presentado por: <b style='color: #388E3C; font-size: 18px;'>Liam Velez</b> | Curso: <b style='color: #F57C00; font-size: 18px;'>201</b></p>
+</div>
+""", unsafe_allow_html=True)
 
 st.write("Toma una foto a tu gato o sube una imagen para analizar su estado de ánimo.")
 
@@ -62,6 +73,6 @@ if imagen_input is not None:
             st.success(f"**Resultado:** {resultado['emocion']}")
             st.info(f"💡 **Recomendación:** {resultado['consejo']}")
 
-# Pie de página
+# Pie de página colorido
 st.markdown("---")
-st.markdown("<p style='text-align: center; color: gray;'>Proyecto de Ciencia y Tecnología | Colegio Rafael Uribe Uribe | Creado por Liam Velez - Curso 201</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #0288D1; font-weight: bold;'>Proyecto de Ciencia y Tecnología | Colegio Rafael Uribe Uribe | Creado por Liam Velez - Curso 201</p>", unsafe_allow_html=True)
